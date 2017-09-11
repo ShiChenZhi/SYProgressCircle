@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "SYProgressCircle.h"
 
 @interface ViewController ()
 
@@ -17,8 +18,17 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    SYProgressCircle *circle = [[SYProgressCircle alloc] initWithFrame:CGRectMake(375/2-100, 667/2-100, 200, 200)];
+    circle.circleRadius = 10;
+    circle.backgroundCircleLineWidth = 25;
+    circle.precent = [NSString stringWithFormat:@"%d",66];
+    circle.lineStrokeColor = [UIColor orangeColor];
+    circle.fillColor = [UIColor lightGrayColor];
+    [self.view addSubview:circle];
+    
+    [circle startAnimation];
 }
-
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

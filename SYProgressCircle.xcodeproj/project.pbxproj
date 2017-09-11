@@ -15,6 +15,7 @@
 		04BF14B61F66297B0030B75B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04BF14B41F66297B0030B75B /* LaunchScreen.storyboard */; };
 		04BF14C11F66297C0030B75B /* SYProgressCircleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BF14C01F66297C0030B75B /* SYProgressCircleTests.m */; };
 		04BF14CC1F66297C0030B75B /* SYProgressCircleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BF14CB1F66297C0030B75B /* SYProgressCircleUITests.m */; };
+		04BF14DF1F662A970030B75B /* SYProgressCircle.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BF14DE1F662A970030B75B /* SYProgressCircle.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,7 +43,7 @@
 		04BF14AC1F66297B0030B75B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		04BF14AD1F66297B0030B75B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		04BF14B01F66297B0030B75B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		04BF14B21F66297B0030B75B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		04BF14B21F66297B0030B75B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = SYProgressCircle/Assets.xcassets; sourceTree = "<group>"; };
 		04BF14B51F66297B0030B75B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04BF14B71F66297B0030B75B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04BF14BC1F66297B0030B75B /* SYProgressCircleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SYProgressCircleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -51,6 +52,8 @@
 		04BF14C71F66297C0030B75B /* SYProgressCircleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SYProgressCircleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		04BF14CB1F66297C0030B75B /* SYProgressCircleUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYProgressCircleUITests.m; sourceTree = "<group>"; };
 		04BF14CD1F66297C0030B75B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04BF14DD1F662A970030B75B /* SYProgressCircle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYProgressCircle.h; sourceTree = "<group>"; };
+		04BF14DE1F662A970030B75B /* SYProgressCircle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYProgressCircle.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				04BF14A51F66297B0030B75B /* SYProgressCircle */,
+				04BF14B21F66297B0030B75B /* Assets.xcassets */,
 				04BF14BF1F66297C0030B75B /* SYProgressCircleTests */,
 				04BF14CA1F66297C0030B75B /* SYProgressCircleUITests */,
 				04BF14A41F66297B0030B75B /* Products */,
@@ -101,14 +105,11 @@
 		04BF14A51F66297B0030B75B /* SYProgressCircle */ = {
 			isa = PBXGroup;
 			children = (
+				04BF14D91F662A120030B75B /* ProgressCircle */,
 				04BF14A91F66297B0030B75B /* AppDelegate.h */,
 				04BF14AA1F66297B0030B75B /* AppDelegate.m */,
 				04BF14AC1F66297B0030B75B /* ViewController.h */,
 				04BF14AD1F66297B0030B75B /* ViewController.m */,
-				04BF14AF1F66297B0030B75B /* Main.storyboard */,
-				04BF14B21F66297B0030B75B /* Assets.xcassets */,
-				04BF14B41F66297B0030B75B /* LaunchScreen.storyboard */,
-				04BF14B71F66297B0030B75B /* Info.plist */,
 				04BF14A61F66297B0030B75B /* Supporting Files */,
 			);
 			path = SYProgressCircle;
@@ -117,6 +118,9 @@
 		04BF14A61F66297B0030B75B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				04BF14AF1F66297B0030B75B /* Main.storyboard */,
+				04BF14B41F66297B0030B75B /* LaunchScreen.storyboard */,
+				04BF14B71F66297B0030B75B /* Info.plist */,
 				04BF14A71F66297B0030B75B /* main.m */,
 			);
 			name = "Supporting Files";
@@ -138,6 +142,15 @@
 				04BF14CD1F66297C0030B75B /* Info.plist */,
 			);
 			path = SYProgressCircleUITests;
+			sourceTree = "<group>";
+		};
+		04BF14D91F662A120030B75B /* ProgressCircle */ = {
+			isa = PBXGroup;
+			children = (
+				04BF14DD1F662A970030B75B /* SYProgressCircle.h */,
+				04BF14DE1F662A970030B75B /* SYProgressCircle.m */,
+			);
+			path = ProgressCircle;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,6 +215,7 @@
 		04BF149B1F66297B0030B75B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = SY;
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = shichenzhi;
 				TargetAttributes = {
@@ -276,6 +290,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04BF14DF1F662A970030B75B /* SYProgressCircle.m in Sources */,
 				04BF14AE1F66297B0030B75B /* ViewController.m in Sources */,
 				04BF14AB1F66297B0030B75B /* AppDelegate.m in Sources */,
 				04BF14A81F66297B0030B75B /* main.m in Sources */,
